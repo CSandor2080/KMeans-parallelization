@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <thread>
-#include <fstream>  // For file operations
+#include <fstream>
 
 
 constexpr int kClustersNumber = 5;
@@ -198,7 +198,7 @@ void ShowCentroids(){
     std::cout << "Centroids have been written to centroids.txt" << std::endl;
 }
 
-// Modified ShowPoints function
+
 void ShowPoints(){
     std::ofstream pointsFile("points.txt");
     if (!pointsFile.is_open()) {
